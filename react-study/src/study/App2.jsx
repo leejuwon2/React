@@ -16,10 +16,17 @@ function App2() {
     console.log(number);
 
     const handleIncreseOnClick = () => {
-        setNum(num + 1);        
+        
+        if(num < 9){
+            setNum(num + 1);        
+        }
+        return;
     }
     const handleDecreaseOnClick = () => {
-        setNum(num - 1);  // 1 감소
+        if(num > -9){
+            setNum(num - 1);  // 1 감소
+        }
+        return;
     };
 
     return <>
